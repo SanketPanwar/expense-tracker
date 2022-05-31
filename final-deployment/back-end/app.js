@@ -31,6 +31,7 @@ const app=express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}))
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(cors());
 
@@ -53,8 +54,7 @@ app.use(premiumRoutes)
 app.use(forgotPasswordRoutes)
 
 app.use((req,res)=>{
-    console.log(req.url)
-    res.sendFile(path.join(__dirname,`front-end/${req.url}`))
+    res.sendFile(path.join(__dirname,`public/${req.url}`))
 })
 
 
