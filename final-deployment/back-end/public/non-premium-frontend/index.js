@@ -120,7 +120,7 @@ function displayExpenses(limit,page=1,rows=localStorage.getItem('rows')){
 //logout
 const logout=document.getElementById('logout')
 logout.addEventListener('click',()=>{
-    window.location.href='../login-frontend/login.html'
+    window.location.href='../index.html'
     localStorage.removeItem('token')
 })
 

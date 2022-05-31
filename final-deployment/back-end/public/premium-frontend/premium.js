@@ -11,7 +11,7 @@ toggle.addEventListener("change", (e) => {
 
 const logout=document.getElementById('logout')
 logout.addEventListener('click',()=>{
-    window.location.href='../login-frontend/login.html'
+    window.location.href='../index.html'
     localStorage.removeItem('token')
 })
 

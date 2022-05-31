@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         axios.post('http://65.1.111.110:3000/user/signup',obj)
         .then(res=>{
             alert(res.data.message)
-            window.location.href='./login.html'
+            window.location.href='./index.html'
         })
         .catch(err=>{
             console.log(err.response.data.message)
