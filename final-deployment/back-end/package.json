@@ -2,10 +2,10 @@
   "name": "node_projects",
   "version": "1.0.0",
   "description": "",
-  "main": "basic_server.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./Expense-Tracker/ready-to-deploy/back-end/app.js"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
